@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+    align-items: center;
+}
+
+#logo {
+    color: dodgerblue;
+    font-size: 2rem;
+    display: flex;
+    gap: 2px;
+    padding: 10px;
+}
+
+#logo .fa-circle {
+    width: 12px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.list li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.list li a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.list button {
+    padding: 8px;
+    background: dodgerblue;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.list button:hover {
+    opacity: 0.8;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 20px;
+    background-color: dodgerblue;
+    padding: 7px;
+    border-radius: 4px;
+    display: none;
+}
+
+.name {
+    background-color: dodgerblue;
+    font-size: 1rem;
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.showcase {
+    width: 60%;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 30px;
+}
+
+.showcase h2 {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: dodgerblue;
+    padding-top: 35px;
+}
+
+.showcase p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    width: 60%;
+}
+
+.showcase #mainTxt {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 6px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+.btns button {
+background: dodgerblue;
+color: #fff;
+padding: 8px;
+font-size: 1rem;
+border: none;
+border-radius: 6px;
+}
+
+.btns button:nth-child(2) {
+    background: beige;
+    color: dodgerblue;
+    
+}
+
+.socials {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials #icons {
+    background: dodgerblue;
+    border-radius: 100%;
+    padding: 10px;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.socials #icons:hover {
+    background: bisque;
+    color: dodgerblue;
+}
+
+.aboutMe {
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+}
+
+.infoTxt {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    width: 550px;
+}
+
+.infoTxt h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.infoTxt p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.infoTxt p strong {
+    color: dodgerblue;
+}
+
+.skills {
+    display: flex;
+    justify-content: right;
+    align-items: first baseline;
+    gap: 35px;
+}
+
+.dev h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-top: 15px;
+}
+
+.dev-btns {
+    padding-top: 15px;
+}
+
+.dev button {
+    background-color: dodgerblue;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#vc {
+    padding-top: 5px;
+}
+
+#vcBtn {
+    padding-top: 5px;
+}
+
+@media (max-width: 930px) {
+.aboutMe {
+    padding-left: 80px;
+    padding-right: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoTxt {
+    width: 90%;
+    padding: 15px;
+}
+
+.skills {
+    display: flex;
+    justify-content: left;
+    align-items: first baseline;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+}
+
+@media (max-width: 700px) {
+    .list li, .list button {
+        display: none;
+       }
+    .list {
+        justify-content: space-between;
+    }
+    .nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .showcase {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90%;
+    }
+   .fa-bars {
+    display: block;
+    cursor: pointer;
+   }  
+
+   .aboutMe {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    justify-content: left;
+}
+
+.infoTxt {
+    width: 90%;
+    padding: 15px;
+}
+
+.skills {
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: first baseline;
+}
+    
+    
+}
